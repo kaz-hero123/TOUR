@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Legends Tournament Bracket</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link ke CSS -->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Mobile Legends Tournament Bracket</h1>
+      <p>Single Elimination Bracket</p>
+    </header>
+
+    <!-- Bracket Section -->
+    <div class="container">
+      <section id="bracket" class="section">
+        <h2>Tournament Bracket</h2>
+        <div class="bracket">
+          <!-- All rounds on the right side -->
+          <div class="round round-1 right inactive-round">
+            <h2>ROUND 1</h2>
+            <div class="match">
+              <span>X PPLG 3</span> vs <span>X DKV 1 (A)</span>
+            </div>
+            <br />
+            <div class="match"><span>X DKV 2</span> vs <span>X PH 2</span></div>
+            <br />
+            <div class="match">
+              <span>X DKV 1 (B)</span> vs <span>X PPLG 2</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>X PH 1</span> vs <span>XI PPLG 1 (A)</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>XI PPLG 3</span> vs <span>XI PPLG 2</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>XI DKV 2</span> vs <span>XI PPLG 1 (B)</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>X PPLG 1</span> vs <span>XI DKV 1</span>
+            </div>
+          </div>
+
+          <div class="round round-2 right inactive-round">
+            <h2>ROUND 2</h2>
+            <div class="match">
+              <span>X PPLG 3</span> vs <span>X DKV 2</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>X PPLG 2</span> vs <span>XI PPLG 1 (A)</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>XI DKV 2</span> vs <span>XI PPLG 3</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>XI DKV 1</span>
+            </div>
+            <br />
+          </div>
+
+          <div class="round semifinal right inactive-round">
+            <h2>Semifinal</h2>
+            <br />
+            <div class="match">
+              <span>X DKV 2</span> vs <span>X PPLG 2</span>
+            </div>
+            <br />
+            <div class="match">
+              <span>XI DKV 2</span> vs <span>XI DKV 1</span>
+            </div>
+            <br />
+          </div>
+
+          <div class="round final right inactive-round">
+            <h2>Final</h2>
+            <div class="match"><span>XI DKV 2 VS X PPLG 2</span></div>
+          </div>
+
+          <div class="round final right">
+            <h2>WINNER</h2>
+            <div class="match"><span>XI DKV 2</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Losers Bracket Section -->
+      <section id="losers-bracket" class="section">
+        <h2>Perebutan juara 3</h2>
+        <div class="bracket">
+          <div class="round round-2-loser left">
+            <h3>Round 2 Losers</h3>
+            <div class="match">
+              <span>X PPLG 2</span> vs
+              <span>XI DKV 1</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Link ke JS -->
+  </body>
+</html>

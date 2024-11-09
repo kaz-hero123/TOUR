@@ -1,0 +1,148 @@
+/* Global Reset and General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: #f4f4f4;
+}
+
+header {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #ff4b2b;
+}
+
+/* Bracket and Round Adjustments */
+.bracket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 60px;
+  position: relative;
+}
+
+.round {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.round.left {
+  align-items: flex-end;
+}
+
+.round.right {
+  align-items: flex-start;
+}
+
+/* Match Styling */
+.match {
+  background-color: #333;
+  padding: 20px 15px;
+  width: 180px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.match span {
+  font-size: 15px;
+}
+
+.match:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 75, 43, 0.5);
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+}
+
+/* Styling for the Final Match in the Center */
+.round.final {
+  display: flex;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.round.final .match {
+  background: #444;
+  border: 2px solid #ff4b2b;
+  width: 200px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .bracket {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .round {
+    width: 100%;
+    align-items: center;
+  }
+
+  .match {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .round.final .match {
+    width: 90%;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .section h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Inactive Round Styling */
+.inactive-round {
+  opacity: 0.5;
+  filter: grayscale(80%);
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
